@@ -1,0 +1,32 @@
+{
+  "name": "poppy-web",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "craft-h": "craft -h",
+    "craft-docker": "craft --docker"
+  },
+  "devDependencies": {
+    "@imf/craft-client": "^1.1.0"
+  },
+  "craft": {
+    "buildType": "framework",
+    "framework": {
+      "web": {
+        "dir": "app",
+        "buildDir": "dist",
+        "buildCommand": "npm run build"
+      },
+      "server": {
+        "dir": "server",
+        "bootCommand": "node dist/Main.js",
+        "buildCommand": "npm run build"
+      },
+      "staticPath": "client"
+    }
+  }
+}

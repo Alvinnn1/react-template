@@ -1,0 +1,35 @@
+{
+  "name": "poppy-server",
+  "version": "1.0.0",
+  "description": "koa",
+  "type": "moudle",
+  "author": "Jude95",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "serve": "node dist/Main.js"
+  },
+  "dependencies": {
+    "@imf/ascended-server": "^1.2.16",
+    "@koa/cors": "^3.1.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "ejs": "^3.1.5",
+    "koa": "^2.13.0",
+    "koa-compress": "^5.1.0",
+    "koa-proxy": "^1.0.0-alpha.3",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.4",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/node": "^14.14.25",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.1.2"
+  },
+  "engines": {
+    "node": ">= 12.0.0",
+    "npm": ">= 3.0.0"
+  }
+}

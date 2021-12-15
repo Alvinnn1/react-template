@@ -1,0 +1,13 @@
+name: poppy-web
+build:
+  beta:
+    - npm install
+    - npm install --prefix app
+    - npm install --prefix server
+    - npm run craft-docker
+  prod:
+    - npm install
+      - npm install --prefix app
+      - npm install --prefix server
+      - npm run craft-docker
+release: mars
